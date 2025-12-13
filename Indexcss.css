@@ -1,18 +1,21 @@
+/* Grunnstil for hele siden */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #a57979;
+    background-color: #a57979; /* Brun bakgrunn */
 }
 
+/* Navigasjon shit */
 .Top {
-    background-color: #3f2f2f;
+    background-color: #3f2f2f; /* Mørk brun */
     padding: 10px 0;
     text-align: center;
     font-size: 14px;
     color: #6c757d;
 }
 
+/* Knapper i toppen */
 .Top button {
   margin: 5px;
   padding: 8px 16px;
@@ -21,11 +24,13 @@ body {
   cursor: pointer;
 }
 
+/* Link inni knapper */
 .Top button a {
   color: white;
   text-decoration: none;
 }
 
+/* Hovedinnhold og noe flex shit jeg må se litt på etterpå. husker bare det funker ikke hvorfor */
 .Tekst {
     text-align: center;
     margin: 20px;
@@ -37,23 +42,26 @@ body {
     gap: 20px;
 }
 
+/* Husker ikke hvorfor denne her, men shit ikke shitter da den fjernes */
 .Tekst h2 {
     width: 100%;
 }
 
+/* Pizzabokser med pizza i dem */
 .pizza-item {
   border: 1px solid #ccc;
   padding: 15px;
   background-color: #fff;
   border-radius: 5px;
   color: #000;
-  width: calc(50% - 10px);
+  width: calc(50% - 10px); /* 2 pizza på en RADISH */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* Bilde i pizzaboks */
 .pizza-item img {
   width: 100%;
   height: auto;
@@ -61,8 +69,9 @@ body {
   margin-bottom: 10px;
 }
 
+/* Kjøp knapp */
 .buy {
-  background-color: #28a745;
+  background-color: #28a745; 
   color: white;
   padding: 12px 24px;
   border: none;
@@ -72,6 +81,7 @@ body {
   margin-top: 10px;
 }
 
+/* Knapp med noe hover shit (erlig talt idk hvorfor her) */
 .buy:hover {
-  background-color: #218838;
+  background-color: #218838; 
 }
