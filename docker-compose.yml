@@ -1,8 +1,6 @@
-version: "3.9"
-
 services:
   db:
-    image: postgres:13
+    image: postgres:15
     container_name: pizzabakeren_db
     environment:
       POSTGRES_USER: pizza

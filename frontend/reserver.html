@@ -1,11 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Reserver - Hjemmeadresse</title>
+    <link rel="stylesheet" href="Indexcss.css">
 </head>
 <body>
-    
+
+    <div class="Top">       # ikke endre dette shittet, er topside (for nå hvertfall)
+        <h1>Startside</h1>
+        <button><a href="Index.html">hjem</a></button>
+        <button><a href="meny.html">meny</a></button>
+        <button><a href="reserver.html">reserver</a></button>
+        <button><a href="admin.html">admin</a></button>
+    </div>
+
+  <div class="form-wrap">
+    <h1>Legg inn hjemmeadresse</h1>
+    <form id="addressForm">
+      <div class="field">
+        <label for="fullname">Fullt navn</label>
+        <input id="fullname" name="fullname" type="text" placeholder="Ola Nordmann" required>
+      </div>
+
+      <div class="field">
+        <label for="street">Gateadresse</label>
+        <input id="street" name="street" type="text" placeholder="Eksempelveien 1" required>
+      </div>
+
+      <div class="field">
+        <label for="number">Husnr / Leil. (valgfritt)</label>
+        <input id="number" name="number" type="text" placeholder="1A">
+      </div>
+
+      <div class="field">
+        <label for="postal">Postnummer</label>
+        <input id="postal" name="postal" type="text" placeholder="0123" required>
+      </div>
+
+      <div class="field">
+        <label for="city">Poststed</label>
+        <input id="city" name="city" type="text" placeholder="Oslo" required>
+      </div>
+
+      <div class="field">
+        <label for="country">Land</label>
+        <select id="country" name="country" required>
+          <option value="Norge">Norge</option>
+          <option value="Sverige">Sverige</option>
+          <option value="Danmark">Danmark</option>
+          <option value="Annet">Annet</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="phone">Telefon (valgfritt)</label>
+        <input id="phone" name="phone" type="tel" placeholder="12345678">
+      </div>
+
+      <button class="btn" type="submit">Lagre adresse</button>
+    </form>
+  </div>
+
+
+
 </body>
 </html>
